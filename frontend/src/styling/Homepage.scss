@@ -1,0 +1,58 @@
+.Homepage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Homepage_form-container {
+    width: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+
+.Homepage_user-container {
+    display: flex;
+    margin: 10px 0;
+
+}
+
+.Homepage_task-create {
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    form {
+        display: flex;
+        align-items: center;
+
+        input[type=text]  {
+            padding: 6px 4px;
+        }
+        input:focus {
+            outline:none;
+        }
+        input[type=submit]  {
+            padding: 6px 5px;
+        }
+    }
+}
+
+.Homepage_tasks-list {
+    li {
+        margin: 5px 0;
+        font-size: 25px;
+        list-style: none;
+        cursor: pointer;
+        border: 1px solid black;
+        padding: 5px 80px;
+    }
+}
