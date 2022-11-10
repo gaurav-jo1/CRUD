@@ -1,5 +1,6 @@
+/* eslint-disable no-useless-concat */
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "../styling/Homepage.scss";
 
 
@@ -18,10 +19,10 @@ const Homepage = () => {
         </div>
         <div className="Homepage_tasks-list">
             <ul>
-                <li>Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li>
-                <li>Task 4</li>
+                <li><Link to={'/profile/' + 'Task1'}>Task 1 </Link></li>
+                <li><Link to={'/profile/' + 'Task2'}>Task 2 </Link></li>
+                <li><Link to={'/profile/' + 'Task3'}>Task 3 </Link></li>
+                <li><Link to={'/profile/' + 'Task4'}>Task 4 </Link></li>
             </ul>
         </div>
       </div>

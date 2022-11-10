@@ -1,19 +1,19 @@
+import { Route, Routes } from "react-router-dom";
 import Homepage from './pages/Homepage';
 import TaskPage from './pages/TaskPage';
-import './App.css';
-import { Route, Routes } from "react-router-dom";
-import LoginPage from '../../../Instagram_clone/frontend/src/pages/LoginPage';
-import SignupPage from '../../../Instagram_clone/frontend/src/pages/SignupPage';
+import LoginPage from "./pages/LoginPage"
+import SignupPage from "./pages/SignupPage"
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route  exact path="/" element={<Homepage />} />
-        <Route exact path="/profile" element={<TaskPage />} />
+        <Route exact path="/" element={<Homepage />} />
+        <Route exact path="/profile/:ProfileTask" element={<TaskPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
       </Routes>
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/signup" element={<SignupPage />} />
     </div>
   );
 }
